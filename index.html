@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundserv site</title>
+    <link rel="stylesheet" href="fundserv.css">
+
+</head>
+<body>
+    <header>
+        <div class="wrapper"></div>
+
+        <div class="login">
+        <a href=""><button>User Login</button>
+        </div>
+
+
+        <div class="logo">
+            <img src="./large-logo.jpeg" alt="logo">
+            </div>
+            
+    
+        <nav>
+            <ul>
+
+                <a href=""><button>About</button></a>
+                <a href=""><button>Francais</button></a>
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Products and Services</button>
+                    <div class="dropdown-content">
+                    <a href="#">Fundserv</a>
+                    <a href="#">GIC serv</a>
+                    <a href="#">Messageserv</a>
+                    <a href="#">MyServ</a>
+                    </div>
+                </div> 
+
+
+                <div class="dropdown">
+                    <button class="dropbtn">Tools and Training</button>
+                    <div class="dropdown-content">
+                    <a href="#">Training</a>
+                    <a href="#">Technical Support</a>
+                    <a href="#">Tools</a>
+                    <a href="#">Standard Adherence</a>
+                    <a href="#">Industry Reports and Agreements</a>
+                    </div>
+                </div> 
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="wrapper2">
+    <img class="mySlides" src="./daysky.jpeg" style="width: 50%; height: 20%;">  
+    <img class="mySlides" src="./entry-1.jpg" style="width: 50%; height: 20%;">
+    <img class="mySlides" src="./boardroom.jpg" style="width: 50%; height: 20%;">
+    </div>
+
+    <div class="container">
+        <div class="text-block">
+        <div class="transbox">
+    
+        <div>
+        <h2>Welcome to Fundserv,
+        Welcome to Certainty
+        </h2>
+        <p><p>Certainty is our business. Certainty means that every transaction, no matter how large, how complex or how demanding always goes through. Flawlessly, securely, and accurately.</p>
+        <p><h2>Keeping the investment industry in motion</h2></p>  
+            <p>We connect the Canadian investment management industry, ensuring every trade is processed timely, accurately and securely. Our goal at Fundserv is to reduce time, cost and risk while improving the ease of doing business so that our clients can focus on what matters most to their business.</p> 
+    </div>
+    
+
+
+
+        <script>
+        let myIndex = 0;
+        carousel();
+        
+        function carousel() {
+        let i;
+        let x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000); // Change image every 4 seconds
+        }
+        </script>
+
+
+
+    
+    
+</body>
+</html>
